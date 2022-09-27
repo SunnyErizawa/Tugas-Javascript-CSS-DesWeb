@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Formulir Data Diri</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <section id="self-form">
+            <div class="container">
+                <h1>Data Diri</h1>
+                <form action="data.php" class="form" onsubmit="return validateForm()">
+                    <div class="form-input-name">
+                        <label for="fname">Nama Lengkap</label><br>
+                        <input type="text" name="name" id="fname"><br>
+                    </div>
+                    <div class="form-input-tanggal">
+                        <label for="fdate">Tanggal Lahir</label><br>
+                        <input type="date" name="tanggal" id="fdate"><br>
+                    </div>
+                    <div class="form-input-alamat">    
+                        <label for="faddress">Alamat</label><br>
+                        <input type="text" name="alamat" id="faddress"><br>
+                    </div>
+                    <div class="form-input-email">    
+                        <label for="femail">Email</label><br>
+                        <input type="text" name="email" id="femail" placeholder="...@email.com"><br>
+                    </div>
+                    <div class="form-input-penjelasan">    
+                        <label for="fdescription">Penjelasan Diri</label><br>
+                        <input type="text" name="penjelasan" id="fdescription"><br>
+                    </div>
+                    <button type="submit" id="button-submit" class="form-button">Submit</button>
+            
+                </form>
+        
+            </div>
+        </section>     
+    </body>
+</html>
